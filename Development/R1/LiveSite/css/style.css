@@ -121,14 +121,13 @@ form {
   transform: translate(-50%, -50%);
   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
   width: 40%;
-  height: 30%;
   padding: 24px;
   background: white;
   border: 1px solid #110425;
   border-radius: 5px;
   overflow: hidden; }
 
-/* line 121, /Users/maya/Documents/GitHub/HopHacksS18/Development/R1/LiveSite/css/style.scss */
+/* line 120, /Users/maya/Documents/GitHub/HopHacksS18/Development/R1/LiveSite/css/style.scss */
 form > input {
   display: block;
   outline: none;
@@ -137,12 +136,12 @@ form > input {
   padding: 8px 0 12px;
   width: 100%; }
 
-/* line 128, /Users/maya/Documents/GitHub/HopHacksS18/Development/R1/LiveSite/css/style.scss */
+/* line 127, /Users/maya/Documents/GitHub/HopHacksS18/Development/R1/LiveSite/css/style.scss */
 form > input[type=submit] {
   margin-top: 24px;
   background: url("../img/pattern.png"); }
 
-/* line 131, /Users/maya/Documents/GitHub/HopHacksS18/Development/R1/LiveSite/css/style.scss */
+/* line 130, /Users/maya/Documents/GitHub/HopHacksS18/Development/R1/LiveSite/css/style.scss */
 form > span {
   display: block;
   font-size: 8px; }

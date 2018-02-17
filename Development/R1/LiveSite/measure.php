@@ -48,7 +48,7 @@
     }
 
     ?>
-
+    <div class="container">
         <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
             <label>Height (cm)</label><?php echo $heightError?>
             <input name="height" type="number">
@@ -64,5 +64,51 @@
             <input name="inseam" type="number">
             <input type="submit">
        </form>
+        <div class="bg">
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+        </div>
+        
+        <script src="scripts/jquery-3.2.1.min.js"></script>
+        <script src="scripts/bg.js"></script>
     </body>
 </html>
