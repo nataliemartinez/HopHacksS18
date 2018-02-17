@@ -1,17 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:500');
+
+$darknavy : rgb(17,4,37);
+$pink : rgb(252, 224, 240);
+
 body, html {
     padding: 0 !important;
     margin: 0 !important;
     width: 100% !important;
     height: 100% !important;
+    font-family: 'Rubik';
+    font-weight: 500;
+    color: $darknavy;   
+} 
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+} .bg>p {
+    position: absolute;
+    font-weight: 300;
+}
+
+
+h1 {
+    font-weight: 500;
+    font-size: 32px;
+} .landing>h1 {
+    transform: translateX(16px);
+} h1>span {
+    height: 40px;
+    width: 88px;
+    overflow: hidden;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+} h1>span>h1 {
+    display: block;
+    width: 100%;
+    height: 48px;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    animation: spincycle 2.4s 1;
+    animation-delay: 0.6s;
+    transform: translateY(0);
+} @keyframes spincycle {
+    0 {
+        transform: translateY(0);
+    } 20% {
+        transform: translateY(-100%);
+    } 25% {
+        transform: translateY(-100%);
+    } 45% {
+        transform: translateY(-200%);
+    } 50% {
+        transform: translateY(-200%);
+    } 70% {
+        transform: translateY(-300%);
+    } 75% {
+        transform: translateY(-300%);
+    } 90% {
+        transform: translateY(-400%);
+    } 100% {
+        transform: translateY(-400%);
+    }
+}
+
+.landing {
+    text-align: center;
+    background: white;
+    border: 1px solid $darknavy;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 0px 7px rgba(0,0,0,0.1);
+} .logo-anim {
+    padding-top: 24px;
+    stroke-dasharray: 1200;
+    stroke-dashoffset: 1200;
+    animation: logoanim 2.4s 1 ease-in-out forwards;
+} @keyframes logoanim {
+    from {
+        stroke-dashoffset: 1200;
+    } to {
+        stroke-dashoffset: 0;
+    }
+} .landing>a {
+    display: block;
+    width: 100%;
     background: url('../img/pattern.png');
-} form {
+    cursor: pointer;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+
+form {
     background: white;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 0px 0px 7px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 7px rgba(0,0,0,0.1);
     width: 40%;
     height: 30%;
     padding: 24px;
+    background: white;
+    border: 1px solid $darknavy;
+    border-radius: 5px;
+    overflow: hidden;
+} form>input {
+    display: block;
+    outline: none;
+    border: 1px solid $darknavy;
+    border-radius: 3px;
+    padding: 8px 0 12px;
+    width: 100%;
+} form>input[type=submit] {
+    margin-top: 24px;
+    background: url('../img/pattern.png');
+} form>span {
+    display: block;
+    font-size: 8px;
 }
