@@ -17,42 +17,26 @@
 
     include("utils.php");
 
-    $query = "INSERT INTO users(username, password) VALUES ('jdsakl', 'hjhj')";
-    run_query($query);
-
-    //a username already exists
-
     $username = "";
     $password = "";
     $usernameError = "";
-    $passwordError = "";
     $incomplete_form = false;
 
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-        if(!isset($_POST["username"])) {
-            $usernameError = "Please enter a username!";
-            $incomplete_form = true;
-        } else if(username_exists($_POST["username"])) {
+        if(username_exists($_POST["username"])) {
             $usernameError = "This username is already taken";
             $incomplete_form = true;
         }
 
-        if(!isset($_POST["password"])) {
-            $passwordError = "Please enter a password!";
-            $incomplete_form = true;
+        if (!incomplete_form) {
+            store_login($_POST["username"], $_POST["password"]);
+            $_SESSION["username"] = $_POST["username"];
+            header("Location: measure.php");
         }
 
-        //if (!incomplete_form) {
-            store_login($_POST["username"], $_POST["password"]);
-            $_SESSION["user_id"] = get_id($_POST["username"]);
-            header("Location: measure.php");
-        //}
-
     }
-
-    ?>
         <div class="container">
             <div class="landing">
                 <svg class="logo-anim">
