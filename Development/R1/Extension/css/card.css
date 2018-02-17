@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik:500");
+/* line 5, /Users/maya/Documents/GitHub/HopHacksS18/Development/R1/Extension/css/card.scss */
+sizeup-card {
+  font-family: 'Rubik';
+  color: #110425;
+  position: absolute;
+  display: block;
+  background: white;
+  margin-top: 12px;
+  width: 144px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  background: url("https://imgur.com/w9LsSEF.png"); }
+
+/* line 16, /Users/maya/Documents/GitHub/HopHacksS18/Development/R1/Extension/css/card.scss */
+sizeup-card:before {
+  content: '';
+  background: white;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+  position: absolute;
+  -webkit-clip-path: polygon(-100% -100%, 200% -100%, -100% 200%);
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+  top: -5px;
+  right: 20px;
+  box-shadow: 0px -2px 3px rgba(0, 0, 0, 0.17); }
+
+/* line 29, /Users/maya/Documents/GitHub/HopHacksS18/Development/R1/Extension/css/card.scss */
+sizeup-card > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  background: white;
+  border-bottom: 1px solid #110425;
+  border-radius: 5px 5px 0 0; }
+
+/* line 38, /Users/maya/Documents/GitHub/HopHacksS18/Development/R1/Extension/css/card.scss */
+sizeup-card span {
+  display: block; }
+
+/* line 42, /Users/maya/Documents/GitHub/HopHacksS18/Development/R1/Extension/css/card.scss */
+#sizeup-card-percentage {
+  text-align: right; }
+
+/* line 44, /Users/maya/Documents/GitHub/HopHacksS18/Development/R1/Extension/css/card.scss */
+#sizeup-card-size {
+  font-size: 16px;
+  font-weight: 500; }
+
+/* line 47, /Users/maya/Documents/GitHub/HopHacksS18/Development/R1/Extension/css/card.scss */
+#sizeup-card-percent {
+  font-size: 20px;
+  font-weight: 500; }
+
+/* line 50, /Users/maya/Documents/GitHub/HopHacksS18/Development/R1/Extension/css/card.scss */
+#sizeup-card-seemore {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: right;
+  width: 90%;
+  height: 16px;
+  font-size: 10px;
+  font-weight: 500; }
+
+/* line 60, /Users/maya/Documents/GitHub/HopHacksS18/Development/R1/Extension/css/card.scss */
+#sizeup-card-dismiss {
+  position: absolute;
+  top: 0;
+  right: 1px;
+  transform: rotate(45deg);
+  cursor: pointer; }
+
+/*# sourceMappingURL=card.css.map */

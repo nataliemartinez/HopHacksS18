@@ -48,7 +48,7 @@ p {
   font-size: 10px;
   font-weight: 500; }
 
-/* line 48, /Users/maya/Documents/GitHub/HopHacksS18/Development/R1/Extension/css/style.scss */
+/* line 46, /Users/maya/Documents/GitHub/HopHacksS18/Development/R1/Extension/css/style.scss */
 .product {
   display: flex;
   flex-direction: row;
@@ -58,21 +58,21 @@ p {
   padding: 10px 0;
   border-bottom: 1px solid #110425; }
 
-/* line 58, /Users/maya/Documents/GitHub/HopHacksS18/Development/R1/Extension/css/style.scss */
+/* line 56, /Users/maya/Documents/GitHub/HopHacksS18/Development/R1/Extension/css/style.scss */
 .percentage {
   text-align: right; }
 
-/* line 62, /Users/maya/Documents/GitHub/HopHacksS18/Development/R1/Extension/css/style.scss */
+/* line 60, /Users/maya/Documents/GitHub/HopHacksS18/Development/R1/Extension/css/style.scss */
 .details {
   height: 150px;
   overflow-y: scroll;
   padding: 16px 10px; }
 
-/* line 66, /Users/maya/Documents/GitHub/HopHacksS18/Development/R1/Extension/css/style.scss */
+/* line 64, /Users/maya/Documents/GitHub/HopHacksS18/Development/R1/Extension/css/style.scss */
 .details > h5 {
   margin-bottom: 6px; }
 
-/* line 70, /Users/maya/Documents/GitHub/HopHacksS18/Development/R1/Extension/css/style.scss */
+/* line 68, /Users/maya/Documents/GitHub/HopHacksS18/Development/R1/Extension/css/style.scss */
 .feedback-info {
   display: flex;
   flex-direction: row;
@@ -80,7 +80,7 @@ p {
   justify-content: space-between;
   margin-bottom: 6px; }
 
-/* line 78, /Users/maya/Documents/GitHub/HopHacksS18/Development/R1/Extension/css/style.scss */
+/* line 76, /Users/maya/Documents/GitHub/HopHacksS18/Development/R1/Extension/css/style.scss */
 .feedback-bar {
   height: 10px;
   width: 100%;
@@ -90,18 +90,18 @@ p {
   background: white;
   margin-bottom: 6px; }
 
-/* line 86, /Users/maya/Documents/GitHub/HopHacksS18/Development/R1/Extension/css/style.scss */
+/* line 84, /Users/maya/Documents/GitHub/HopHacksS18/Development/R1/Extension/css/style.scss */
 .feedback-bar-sizer {
   margin: 0;
   padding: 0;
   height: 100%;
   transition: 0.3s; }
 
-/* line 92, /Users/maya/Documents/GitHub/HopHacksS18/Development/R1/Extension/css/style.scss */
+/* line 90, /Users/maya/Documents/GitHub/HopHacksS18/Development/R1/Extension/css/style.scss */
 .feedback-bar-sizer:hover {
   background: #fce0f0; }
 
-/* line 94, /Users/maya/Documents/GitHub/HopHacksS18/Development/R1/Extension/css/style.scss */
+/* line 92, /Users/maya/Documents/GitHub/HopHacksS18/Development/R1/Extension/css/style.scss */
 .feedback-bar-pattern {
   width: 0%;
   border-right: 1px solid #110425;
@@ -114,23 +114,23 @@ p {
   to {
     width: 100%; } }
 
-/* line 108, /Users/maya/Documents/GitHub/HopHacksS18/Development/R1/Extension/css/style.scss */
+/* line 106, /Users/maya/Documents/GitHub/HopHacksS18/Development/R1/Extension/css/style.scss */
 .feedback:nth-of-type(1) .feedback-bar-pattern {
   animation-delay: 0s; }
 
-/* line 112, /Users/maya/Documents/GitHub/HopHacksS18/Development/R1/Extension/css/style.scss */
+/* line 110, /Users/maya/Documents/GitHub/HopHacksS18/Development/R1/Extension/css/style.scss */
 .feedback:nth-of-type(2) .feedback-bar-pattern {
   animation-delay: 0.2s; }
 
-/* line 116, /Users/maya/Documents/GitHub/HopHacksS18/Development/R1/Extension/css/style.scss */
+/* line 114, /Users/maya/Documents/GitHub/HopHacksS18/Development/R1/Extension/css/style.scss */
 .feedback:nth-of-type(3) .feedback-bar-pattern {
   animation-delay: 0.4s; }
 
-/* line 120, /Users/maya/Documents/GitHub/HopHacksS18/Development/R1/Extension/css/style.scss */
+/* line 118, /Users/maya/Documents/GitHub/HopHacksS18/Development/R1/Extension/css/style.scss */
 .feedback:nth-of-type(4) .feedback-bar-pattern {
   animation-delay: 0.6s; }
 
-/* line 124, /Users/maya/Documents/GitHub/HopHacksS18/Development/R1/Extension/css/style.scss */
+/* line 122, /Users/maya/Documents/GitHub/HopHacksS18/Development/R1/Extension/css/style.scss */
 .feedback:nth-of-type(5) .feedback-bar-pattern {
   animation-delay: 0.8s; }
 
