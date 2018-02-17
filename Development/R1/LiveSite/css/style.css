@@ -1,2 +1,21 @@
+/* line 1, /Users/maya/Documents/GitHub/HopHacksS18/Development/R1/LiveSite/css/style.scss */
+body, html {
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: url("../img/pattern.png"); }
+
+/* line 7, /Users/maya/Documents/GitHub/HopHacksS18/Development/R1/LiveSite/css/style.scss */
+form {
+  background: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
+  width: 40%;
+  height: 30%;
+  padding: 24px; }
 
 /*# sourceMappingURL=style.css.map */
