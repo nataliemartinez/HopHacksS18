@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:500');
+
+$darknavy : rgb(17,4,37);
+$pink : rgb(252, 224, 240);
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+body, html {
+    width: 200px;
+    font-family: 'Rubik';
+    font-weight: 500;
+    color: $darknavy;
+    background: url('../img/pattern.png');
+    margin: 0;
+    padding: 0;
+} 
+
+// RESET NATIVE ELEMENTS
+h1,h2,h3,h4,h4,h5,h6,p,div {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: 500;
+} h2 {
+    font-size: 18px;
+    font-weight: 500;
+} h3 {
+    font-size: 16px;
+    font-weight: 500;
+} h4 {
+    font-size: 14px;
+    font-weight: 500;
+} h5, h6 {
+    font-size: 10px;
+    font-weight: 500;
+} p {
+    font-size: 10px;
+    font-weight: 500;
+}
+
+
+
+.product {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+    padding: 10px 0;
+    border-bottom: 1px solid $darknavy;
+}
+
+.percentage {
+    text-align: right;
+}
+
+.details {
+    height: 150px;
+    overflow-y: scroll;
+    padding: 16px 10px;
+} .details>h5 {
+    margin-bottom: 6px;
+}
+
+.feedback-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.feedback-bar {
+    height: 10px;
+    width: 100%;
+    border: 1px solid $darknavy;
+    border-radius: 3px;
+    overflow: hidden;
+    background: white;
+    margin-bottom: 6px;
+} .feedback-bar-sizer {
+    margin: 0;
+    padding: 0;
+    //width: 67%;
+    height: 100%;
+    transition: 0.3s;
+} .feedback-bar-sizer:hover {
+    background: $pink;
+} .feedback-bar-pattern {
+    width: 0%;
+    border-right: 1px solid $darknavy;
+    background: url('../img/feedback-bar.png');
+    animation: feedback-bar 1.2s ease-in-out 1 forwards;
+} @keyframes feedback-bar {
+    from {
+        width: 0%;
+    } to {
+        width: 100%;
+    }
+}
+
+.feedback:nth-of-type(1) {
+    .feedback-bar-pattern {
+        animation-delay: 0s;
+    }
+} .feedback:nth-of-type(2) {
+    .feedback-bar-pattern {
+        animation-delay: 0.2s;
+    }
+} .feedback:nth-of-type(3) {
+    .feedback-bar-pattern {
+        animation-delay: 0.4s;
+    }
+} .feedback:nth-of-type(4) {
+    .feedback-bar-pattern {
+        animation-delay: 0.6s;
+    }
+} .feedback:nth-of-type(5) {
+    .feedback-bar-pattern {
+        animation-delay: 0.8s;
+    }
+}
