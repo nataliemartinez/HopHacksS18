@@ -42,13 +42,15 @@
             for ($j = 0; $j < count($measurements); $j++){
                 $results[$measurements[$j]] = ${$measurements[$j]};
             }
-            store_measurements($results, $username);
-            header("Location: register.php");
+            store_measurements($results, $_SESSION['username']);
+            header("Location: confirmation.php");
         }
 
     }
 
     ?>
+
+    
     <div class="container">
         <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
             <label>Height (cm)</label><?php echo $heightError?>
