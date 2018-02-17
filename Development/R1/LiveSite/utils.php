@@ -6,7 +6,7 @@ function connect() {
 	fscanf($file, "%s %s %s %s", $server, $username, $password, $database);
 	fclose($file);
 	$conn = mysqli_connect($server, $username, $password, $database);
-	if (!conn) {
+	if (!$conn) {
 		die("Connection failed");
 		return -1;
 	}
@@ -17,7 +17,7 @@ function run_query($query, $result_mode=MYSQLI_STORE_RESULT) {
 	$conn = connect();
 	$value = mysqli_query($conn, $query, $result_mode);
 	mysqli_close($conn);
-	return $result;
+	return $value;
 }
 
 function store_login($username, $password) {
@@ -32,22 +32,13 @@ function username_exists($username) {
 	return ($row[0] > 0);
 }
 
-function get_id($username) {
-	$query = "SELECT id FROM users WHERE username='$username";
-	$result = run_query($query);
-	$row = mysqli_fetch_assoc($result);
-	return $row['id'];
-}
-
-function store_measurements($measurements, $user_id) {
-	$query = "INSERT INTO measurements (user_ID, height, shoulder, chest, waist, hips, inseam) VALUES ('$user_id";
+function store_measurements($measurements, $username) {
+	$query = "INSERT INTO measurements (username, height, shoulder, chest, waist, hips, inseam) VALUES ('$username',";
 	foreach ($measurements as $key => $val) {
-		$query .= "'" . $val . "',";
+		$query .=  $val . ", ";
 	}
-	$query = substr($query, 0, -1);
+	$query = substr($query, 0, -2);
 	$query .= ")";
-	echo $query;
-	die();
 	run_query($query);
 }
 
