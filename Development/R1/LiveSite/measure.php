@@ -41,8 +41,8 @@
             for ($j = 0; $j < count($measurements); $j++){
                 $results[$measurements[$j]] = ${$measurements[$j]};
             }
-            store_measurements($results, $username);
-            header("Location: register.php");
+            store_measurements($results, $_SESSION['username']);
+            header("Location: confirmation.php");
         }
 
     }
