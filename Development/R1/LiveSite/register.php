@@ -30,7 +30,7 @@
             $incomplete_form = true;
         }
 
-        if (!incomplete_form) {
+        if (!$incomplete_form) {
             store_login($_POST["username"], $_POST["password"]);
             $_SESSION["username"] = $_POST["username"];
             header("Location: measure.php");
