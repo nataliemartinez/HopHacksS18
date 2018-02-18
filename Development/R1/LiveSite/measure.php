@@ -19,31 +19,23 @@
 
     $measurements = array("height", "shoulder", "chest", "waist", "hips", "inseam");
     for ($k = 0; $k < count($measurements); $k++) {
-        ${$measurements[$k].Error} = "";
         ${$measurements[$k]} = "";
     }
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-        $incomplete_form = false;
 
         for ($i = 0; $i < count($measurements); $i++) {
-            if (!isset($_POST[$measurements[$i]])){
-                ${$measurements[$i].Error} = "This field is required!";
-                $incomplete_form = true;
-            } else {
-                ${$measurements[$i]} = $_POST[$measurements[$i]];
-            }
+            ${$measurements[$i]} = $_POST[$measurements[$i]];
         }
 
-        if (!incomplete_form) {
-            $results = array();
-            for ($j = 0; $j < count($measurements); $j++){
-                $results[$measurements[$j]] = ${$measurements[$j]};
-            }
-            store_measurements($results, $_SESSION['username']);
-            header("Location: confirmation.php");
+        $results = array();
+        for ($j = 0; $j < count($measurements); $j++){
+            $results[$measurements[$j]] = ${$measurements[$j]};
         }
+        store_measurements($results, $_SESSION['username']);
+        header("Location: confirmation.php");
+
 
     }
 
@@ -52,18 +44,18 @@
     
     <div class="container">
         <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
-            <label>Height (cm)</label><?php echo $heightError?>
-            <input name="height" type="number">
-            <label>Shoulder</label><?php echo $shoulderError?>
-            <input name="shoulder" type="number">
-            <label>Chest</label><?php echo $chestError?>
-            <input name="chest" type="number">
-            <label>Waist</label><?php echo $waistError?>
-            <input name="waist" type="number">
-            <label>Hips</label><?php echo $hipsError?>
-            <input name="hips" type="number">
-            <label>Inseam</label><?php echo $inseamError?>
-            <input name="inseam" type="number">
+            <label>Height (cm)</label>
+            <input name="height" type="number" required>
+            <label>Shoulder</label>
+            <input name="shoulder" type="number" required>
+            <label>Chest</label>
+            <input name="chest" type="number" required>
+            <label>Waist</label>
+            <input name="waist" type="number" required>
+            <label>Hips</label>
+            <input name="hips" type="number" required>
+            <label>Inseam</label>
+            <input name="inseam" type="number" required>
             <input type="submit">
        </form>
         <div class="bg">
