@@ -37,6 +37,8 @@
         }
 
     }
+        
+    ?>
         <div class="container">
             <div class="landing">
                 <svg class="logo-anim">
