@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Rubik:500");
 /* line 5, /Users/maya/Documents/GitHub/HopHacksS18/Development/R1/Extension/css/card.scss */
 sizeup-card {
-  font-family: 'Rubik';
+  font-family: 'Rubik', sans-serif;
   color: #110425;
   position: absolute;
   display: block;
